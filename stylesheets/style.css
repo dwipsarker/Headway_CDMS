@@ -95,3 +95,9 @@ STYLE FRAME AREA
 .form-warning {
     color: red;
 }
+
+.calender__area {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 10px);
+}

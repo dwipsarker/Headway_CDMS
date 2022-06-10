@@ -1,6 +1,10 @@
+.frame__content {
+    padding: 10px;
+}
+
 .content__area {
     overflow: scroll;
-    height: 370px
+    height: 390px
 }
 
 .content__area::-webkit-scrollbar {
@@ -13,4 +17,95 @@
     height: 40px;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 20px;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+}
+
+.calender__area {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    grid-template-rows: repeat(6, 30px);
+    grid-auto-rows: auto;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.calVal {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    /* border: 1.5px solid gray; */
+    font-size: 1.4rem;
+}
+
+.assignment {
+    border: 2px solid rgb(66, 240, 89);
+}
+
+.fixed__area {
+    position: -webkit-sticky;
+    /* Safari */
+    /* position: sticky; */
+    top: 0;
+    z-index: 1;
+
+}
+
+.notice {
+    margin-top: 10px;
+}
+
+.notice__title {
+    margin-bottom: 20px;
+}
+
+.notice__card {
+    background-color: rgba(243, 225, 225, 0.877);
+    padding: 10px 5px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.notice__card::before {
+    content: "22-12-2022";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-0%, -100%);
+}
+
+.card__txt {
+    font-size: 1.5rem;
+}
+
+.card__date {
+    display: block;
+    text-align: right;
+}
+
+.readmore {
+    display: block;
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+.card__admin {
+    height: 20px;
+    width: 20px;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
 }
