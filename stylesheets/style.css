@@ -1,0 +1,97 @@
+/* GOOGLE FONTS  */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;500;600;700;900&family=Roboto:wght@300;400;700;900&display=swap");
+
+/* _____________________________________VERIABLES START*/
+:root {
+    /* COLOR */
+    --color-primary: #0066ffe7;
+    --color-secondary: #7a869a;
+    --color-secondary-light: #efefef;
+    --color-light: #fff;
+    --color-danger: #f05050;
+    --color-dark: #00000081;
+    --color-black: #000000;
+    /* FONTS  */
+    --title-text: "Roboto", sans-serif;
+    --body-text: "Raleway", sans-serif;
+}
+
+/* 
+---------------------------------
+CSS RESET
+--------------------------------- 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.25%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: var(--body-text);
+    background-color: #D5DBE2;
+    /* background-image: url("../img/blob-haikei.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cfcfcf; */
+}
+
+/* 
+---------------------------------
+STYLE FRAME AREA
+--------------------------------- 
+*/
+.frame {
+    height: 510px;
+    width: 260px;
+    border-radius: 20px;
+    background-color: var(--color-light);
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.05) 0px 8px 32px; */
+    /* outline: 2px solid rgb(255, 255, 255);
+    outline-offset: 2px; */
+
+}
+
+/*statusbar style________________ */
+.frame__statusbar {
+    display: flex;
+    align-items: baseline;
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+.statusbar__time {
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.statusbar__icon.fa-signal,
+.statusbar__icon.fa-wifi {
+    font-size: 1.2rem;
+}
+
+.statusbar__icon {
+    margin-left: 5px;
+}
+
+.frame__content {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-warning {
+    color: red;
+}

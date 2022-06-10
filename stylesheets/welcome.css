@@ -1,0 +1,36 @@
+.frame__content {
+    justify-content: end;
+    height: 90%;
+}
+
+.content__logo {
+    height: 50px;
+    width: 50px;
+
+}
+
+.content__section-one {
+    position: absolute;
+    top: 25%;
+}
+
+.content__section-two {
+    margin-top: 100%;
+}
+
+.content__btn {
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+
+.content__text {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 10px;
+}

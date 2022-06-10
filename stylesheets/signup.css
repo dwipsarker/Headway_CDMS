@@ -1,0 +1,39 @@
+.content__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__buttons button {
+    border: 0;
+    background: none;
+}
+
+.content__title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.input__group {
+    display: flex;
+    padding: 5px;
+    background-color: #F1F5F9;
+    margin: 7px 0;
+    font-size: 1.3rem;
+}
+
+.input__group input {
+    width: 152px;
+    max-width: 100%;
+}
+
+.content__btn {
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
