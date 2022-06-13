@@ -1,7 +1,11 @@
+.border {
+    border: 1px solid red;
+}
+
 .frame {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 35px 1fr 50px;
+    grid-template-rows: 35px 1fr;
 }
 
 /* STYLEING FRME CONTENT AREA 
@@ -21,11 +25,10 @@ _______________________________________ */
 }
 
 .header__img-area {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     overflow: hidden;
-    outline: 2px solid #E6DFF1;
-    outline-offset: 5px;
+    border: 2px solid #E6DFF1;
     border-radius: 50%;
     margin-left: 6px;
 }
@@ -236,12 +239,10 @@ _______________________________________ */
     background-color: tomato;
     color: white;
     content: "Dedline";
-    display: block;
 }
 
 .navigator__red::after {
     border-top-color: tomato;
-    display: block;
 }
 
 .navigator__red:hover::after,
@@ -324,97 +325,137 @@ _______________________________________ */
     outline-offset: -3px;
 }
 
-
-
 /* #_calender_area_end  */
-
-
-
 /* CONTENT CALENDER STYLEING END_____________  */
 
 
+/* CONTENT  STYLEING END_____________  */
+.content__assignment {
+    margin-top: 15px;
+}
 
-
-
-/* li {
-    margin-left: 20px;
-    list-style: none;
-    margin-left: 30px;
-    margin-top: 20px;
-
-} */
-
-/* li::before {
-    content: "";
-    height: 130px;
-    width: 3px;
-    background-color: black;
-    display: block;
-    margin: 5px 20px;
-    position: absolute;
-    left: -10;
-    top: 0;
-} */
-
-/* ul::before {
-    content: "";
-    height: 40px;
-    width: 3px;
+.assignment__header {
     display: flex;
-    background-color: red;
-} */
-
-
-/* ul {
-    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-ul li {
-    position: relative;
-    list-style: none;
-    border: 1px solid red;
+.options__box {
+    /* border: 2px solid #f7edec83; */
+    border-radius: 10px;
+    padding: 3px;
+    border-radius: 3px;
 }
 
-ul li::before {
-    content: "";
-    height: 20px;
-    width: 2px;
-    background-color: #C0DEDD;
-    display: flex;
-    margin-left: -15px;
-}
-
-ul li::after {
-    position: absolute;
-    top: 31px;
-    left: -21px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    background-color: #F1DFDE;
-    color: black;
+.box__selector {
+    border: 0;
+    width: 80px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
     padding: 5px;
+    border: 2px solid #f7edecd2;
+    border-radius: 5px;
+}
+
+.box__selector::after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+.assignemt__cards {
+    margin-top: 5px;
+
+}
+
+.cards__item {
+    height: 80px;
+    background-color: #FFEAE2;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.cards__item::before {
+    content: "";
+    height: 30px;
+    width: 30px;
+    border: 30px solid #fd8c63;
     border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 38px;
 }
 
-ul li:nth-child(1):after {
-    content: "\f185";
+.item__title {
+    color: #f88b60;
+    font-size: 1.5rem;
 }
 
-ul li:nth-child(2):after {
-    content: "\f133";
+.item__btn {
+    padding: 7px 10px;
+    background-color: #fd8c63;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 20px;
+    align-self: flex-start;
 }
 
-ul li:nth-child(3):after {
-    content: "\f017";
+
+
+
+
+
+
+/* .options__sort {
+    appearance: none;
+    border: 2px solid gray;
+    text-align: center;
+    padding: 5px;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    outline: none;
+    line-height: inherit;
+} */
+
+
+/* .my-custom-select [slot='button'] {
+    display: flex;
+    align-content: center;
 }
 
-ul li:nth-child(4):after {
-    content: "\f0ae";
+.my-custom-select button {
+    padding: 5px;
+    border: none;
+    background: #f06;
+    border-radius: 5px 0 0 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.my-custom-select .label {
+    padding: 5px;
+    border: 1px solid #f06;
+    border-radius: 0 5px 5px 0;
 } */
 
 
 
-
+/* -------------------------------------------- */
 .frame__navigation {
     display: flex;
     justify-content: space-around;
@@ -433,6 +474,8 @@ ul li:nth-child(4):after {
     transition: .3s;
 }
 
+
+
 .buttonBg:hover,
 .buttonBg.active {
     background-color: #F1DFDE;
@@ -441,139 +484,4 @@ ul li:nth-child(4):after {
     transform: scale(1.1);
     border-radius: 50%;
     margin-bottom: 20px;
-}
-
-.content__area {
-    overflow: scroll;
-    max-height: 400px;
-}
-
-.content__area::-webkit-scrollbar {
-    display: none;
-}
-
-
-
-.avatar {
-    height: 35px;
-    width: 35px;
-}
-
-.calender__area {
-    display: grid;
-    grid-template-columns: repeat(7, 30px);
-    grid-template-rows: repeat(6, 30px);
-    grid-auto-rows: auto;
-    row-gap: 5px;
-    column-gap: 5px;
-    margin-top: 10px;
-    background-color: white;
-}
-
-.calVal {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid red; */
-    border-radius: 10px;
-    /* border: 1.5px solid gray; */
-    font-size: 1.4rem;
-}
-
-
-
-.fixed__area {
-    position: -webkit-sticky;
-    /* Safari */
-    /* position: sticky; */
-    top: 0;
-    z-index: 1;
-
-}
-
-.notice {
-    margin-top: 10px;
-}
-
-.notice__title {
-    margin-bottom: 20px;
-}
-
-.notice__card {
-    background-color: rgba(243, 225, 225, 0.877);
-    padding: 10px 5px;
-    border-radius: 5px;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.notice__card::before {
-    content: "22-12-2022";
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-0%, -100%);
-}
-
-.card__txt {
-    font-size: 1.5rem;
-}
-
-.card__date {
-    display: block;
-    text-align: right;
-}
-
-.readmore {
-    display: block;
-    text-align: right;
-    font-size: 1.4rem;
-}
-
-.card__admin {
-    height: 20px;
-    width: 20px;
-}
-
-.card__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5px;
-}
-
-
-
-
-
-.cards-area__card {
-    background-color: blueviolet;
-    border-radius: 10px;
-    width: 100%;
-    height: 80px;
-    margin-top: 10px;
-}
-
-/* .area__header {
-    display: flex;
-    align-items: center;
-} */
-
-.header__icons {
-    margin-left: auto;
-    display: flex;
-    gap: 10px;
-    font-size: 1.5rem;
-    align-items: center;
-
-}
-
-.profile {
-    border: 1px solid rgb(71, 71, 71);
-    padding: 5px;
-    border-radius: 50%;
-}
-
-.admin_name {
-    margin-top: 10px;
 }

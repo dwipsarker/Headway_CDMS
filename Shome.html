@@ -15,6 +15,7 @@
     <!-- additional style sheets  -->
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <link rel="stylesheet" href="./stylesheets/shome.css" />
+    <link rel="stylesheet" href="./stylesheets/mediaQuery.css" />
 </head>
 
 <body>
@@ -30,169 +31,150 @@
         <!-- statusbar area end  -->
 
         <!-- content area start  -->
+
         <section class="frame__content">
-            <div class="content__area">
-                <!-- content header area start  -->
-                <section class="content__header">
-                    <div class="header__img-area">
-                        <img class="img-area__img" src="./img/avatar/avatar.jpg" alt="profile">
-                    </div>
-                    <div class="header__buttons">
-                        <div class="buttons__btn"><i class="bi bi-bell"></i></div>
-                        <div class="buttons__btn"><i class="bi bi-gear"></i></div>
-                    </div>
-                </section>
-                <!-- content header area end  -->
+            <!-- content header area start  -->
+            <section class="content__header">
+                <div class="header__img-area">
+                    <img class="img-area__img" src="./img/avatar/avatar.jpg" alt="profile">
+                </div>
+                <div class="header__buttons">
+                    <div class="buttons__btn"><i class="bi bi-bell"></i></div>
+                    <div class="buttons__btn"><i class="bi bi-gear"></i></div>
+                </div>
+            </section>
+            <!-- content header area end  -->
 
-                <!-- greetings area start  -->
-                <section class="content__greetings">
-                    <h1 class="greetings__admin">Hello, Avi</h1>
-                    <P class="greetings__description">
-                        Wellcome to your HCDMS.Meet with our feature programmers.
-                    </P>
-                    <ul class="greetings__list">
-                        <div class="list__bar"></div>
-                        <div class="list__items">
-                            <li class="list__item">Good Morning</li>
-                            <li class="list__item">Webnesday 26, july</li>
-                            <li class="list__item">It's 10.45 am</li>
-                            <li class="list__item">Todays class
-                                <p class="item__sub">Programming Essential</p>
-                                <p class="item__sub">Web Design</p>
-                                <p class="item__sub">It Support</p>
-                            </li>
-                        </div>
-                    </ul>
-                </section>
-                <!-- greetings area end  -->
+            <!-- greetings area start  -->
+            <section class="content__greetings">
+                <h1 class="greetings__admin">Hello, Avi</h1>
+                <P class="greetings__description">
+                    Wellcome to your HCDMS.Meet with our feature programmers.
+                </P>
+                <ul class="greetings__list">
+                    <div class="list__bar"></div>
+                    <div class="list__items">
+                        <li class="list__item">Good Morning</li>
+                        <li class="list__item">Webnesday 26, july</li>
+                        <li class="list__item">It's 10.45 am</li>
+                        <li class="list__item">Todays class
+                            <p class="item__sub">Programming Essential</p>
+                            <p class="item__sub">Web Design</p>
+                            <p class="item__sub">It Support</p>
+                        </li>
+                    </div>
+                </ul>
+            </section>
+            <!-- greetings area end  -->
 
-                <!-- calender area start  -->
-                <section class="content__calender">
-                    <div class="calender__header">
-                        <h2 class="header__title">Fabruary</h2>
-                        <div class="header__navigator">
-                            <div class="navigator__red color"></div>
-                            <div class="navigator__green color"></div>
+            <!-- calender area start  -->
+            <section class="content__calender">
+                <div class="calender__header">
+                    <h2 class="header__title">Fabruary</h2>
+                    <div class="header__navigator">
+                        <div class="navigator__red color"></div>
+                        <div class="navigator__green color"></div>
+                    </div>
+                </div>
+                <div class="calender__data">
+                    <div class="data_headers">
+                        <div class="headers__value">S</div>
+                        <div class="headers__value">M</div>
+                        <div class="headers__value">T</div>
+                        <div class="headers__value">W</div>
+                        <div class="headers__value">T</div>
+                        <div class="headers__value">F</div>
+                        <div class="headers__value">S</div>
+                    </div>
+                    <div class="data__body">
+                        <div class="body__value">1</div>
+                        <div class="body__value">2</div>
+                        <div class="body__value">3</div>
+                        <div class="body__value assignment">4</div>
+                        <div class="body__value">5</div>
+                        <div class="body__value">6</div>
+                        <div class="body__value">7</div>
+                    </div>
+                    <div class="data__body">
+                        <div class="body__value assignment">8</div>
+                        <div class="body__value">9</div>
+                        <div class="body__value">10</div>
+                        <div class="body__value">11</div>
+                        <div class="body__value">12</div>
+                        <div class="body__value">13</div>
+                        <div class="body__value">14</div>
+                    </div>
+                    <div class="data__body">
+                        <div class="body__value">15</div>
+                        <div class="body__value">16</div>
+                        <div class="body__value">17</div>
+                        <div class="body__value deadline">18</div>
+                        <div class="body__value">19</div>
+                        <div class="body__value">20</div>
+                        <div class="body__value">21</div>
+                    </div>
+                    <div class="data__body">
+                        <div class="body__value">22</div>
+                        <div class="body__value">23</div>
+                        <div class="body__value ">24</div>
+                        <div class="body__value">25</div>
+                        <div class="body__value">26</div>
+                        <div class="body__value">27</div>
+                        <div class="body__value">28</div>
+                    </div>
+                    <div class="data__body">
+                        <div class="body__value">22</div>
+                        <div class="body__value">23</div>
+                        <div class="body__value">24</div>
+                        <div class="body__value ">25</div>
+                        <div class="body__value">26</div>
+                        <div class="body__value">27</div>
+                        <div class="body__value deadline">28</div>
+                    </div>
+                    <div class="data__body">
+                        <div class="body__value">29</div>
+                        <div class="body__value">30</div>
+                        <div class="body__value">31</div>
+                        <div class="body__value ">1</div>
+                        <div class="body__value">2</div>
+                        <div class="body__value">3</div>
+                        <div class="body__value">4</div>
+                    </div>
+                </div>
+            </section>
+            <!-- calender area end  -->
+
+            <section class="content__assignment">
+                <div class="assignment__header">
+                    <h2 class="header__title">Assignemts</h2>
+                    <div class="header__options">
+                        <div class="options__box">
+                            <select class="box__selector" id="sort">
+                                <option class="selector__option" value="">
+                                    Recent
+                                </option>
+                                <option class="selector__option" value="">
+                                    All
+                                </option>
+                            </select>
                         </div>
                     </div>
-                    <div class="calender__data">
-                        <div class="data_headers">
-                            <div class="headers__value">S</div>
-                            <div class="headers__value">M</div>
-                            <div class="headers__value">T</div>
-                            <div class="headers__value">W</div>
-                            <div class="headers__value">T</div>
-                            <div class="headers__value">F</div>
-                            <div class="headers__value">S</div>
-                        </div>
-                        <div class="data__body">
-                            <div class="body__value">1</div>
-                            <div class="body__value">2</div>
-                            <div class="body__value">3</div>
-                            <div class="body__value assignment">4</div>
-                            <div class="body__value">5</div>
-                            <div class="body__value">6</div>
-                            <div class="body__value">7</div>
-                        </div>
-                        <div class="data__body">
-                            <div class="body__value assignment">8</div>
-                            <div class="body__value">9</div>
-                            <div class="body__value">10</div>
-                            <div class="body__value">11</div>
-                            <div class="body__value">12</div>
-                            <div class="body__value">13</div>
-                            <div class="body__value">14</div>
-                        </div>
-                        <div class="data__body">
-                            <div class="body__value">15</div>
-                            <div class="body__value">16</div>
-                            <div class="body__value">17</div>
-                            <div class="body__value deadline">18</div>
-                            <div class="body__value">19</div>
-                            <div class="body__value">20</div>
-                            <div class="body__value">21</div>
-                        </div>
-                        <div class="data__body">
-                            <div class="body__value">22</div>
-                            <div class="body__value">23</div>
-                            <div class="body__value ">24</div>
-                            <div class="body__value">25</div>
-                            <div class="body__value">26</div>
-                            <div class="body__value">27</div>
-                            <div class="body__value">28</div>
-                        </div>
-                        <div class="data__body">
-                            <div class="body__value">22</div>
-                            <div class="body__value">23</div>
-                            <div class="body__value">24</div>
-                            <div class="body__value ">25</div>
-                            <div class="body__value">26</div>
-                            <div class="body__value">27</div>
-                            <div class="body__value deadline">28</div>
-                        </div>
+                </div>
+                <div class="assignemt__cards">
+                    <div class="cards__item">
+                        <h4 class="item__title">Programming Essentials</h4>
+                        <a href="" class="item__btn">Read more</a>
                     </div>
-
-                </section>
-
-                <!-- calender area end  -->
-
-
-                <section class="assignment__section">
-                    <h3 class="assignment__title">Assignemt</h3>
-                    <div class="assignemt__cards-area">
-                        <div class="cards-area__card"></div>
-                        <div class="cards-area__card"></div>
-                        <div class="cards-area__card"></div>
-                        <div class="cards-area__card"></div>
-
-
+                    <div class="cards__item">
+                        <h4 class="item__title">Graphic Desing</h4>
+                        <a href="" class="item__btn">Read more</a>
                     </div>
-                </section>
-
-                <section class="notice">
-                    <h3 class="notice__title">Notice</h3>
-                    <div class="notice__card">
-                        <div class="card__header">
-                            <img class="card__admin" src="./img/logo.png" alt="">
-                            <!-- <small class="card__date">18-04-2022</small> -->
-                        </div>
-                        <p class="card__txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum,
-                            hic.......
-                        </p>
-                        <a class="readmore" href="">Read more</a>
+                    <div class="cards__item">
+                        <h4 class="item__title">It Support</h4>
+                        <a href="" class="item__btn">Read more</a>
                     </div>
-                    <div class="notice__card">
-                        <div class="card__header">
-                            <img class="card__admin" src="./img/logo.png" alt="">
-                            <!-- <small class="card__date">18-04-2022</small> -->
-                        </div>
-                        <p class="card__txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum,
-                            hic.......
-                        </p>
-                        <a class="readmore" href="">Read more</a>
-                    </div>
-                    <div class="notice__card">
-                        <div class="card__header">
-                            <img class="card__admin" src="./img/logo.png" alt="">
-                            <!-- <small class="card__date">18-04-2022</small> -->
-                        </div>
-                        <p class="card__txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum,
-                            hic.......
-                        </p>
-                        <a class="readmore" href="">Read more</a>
-                    </div>
-                    <div class="notice__card">
-                        <div class="card__header">
-                            <img class="card__admin" src="./img/logo.png" alt="">
-                            <!-- <small class="card__date">18-04-2022</small> -->
-                        </div>
-                        <p class="card__txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum,
-                            hic.......
-                        </p>
-                        <a class="readmore" href="">Read more</a>
-                    </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </section>
 
 

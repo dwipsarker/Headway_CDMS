@@ -1,0 +1,23 @@
+@media only screen and (max-width: 420px) {
+    .frame {
+        height: 100%;
+        width: 100%;
+        grid-template-rows: 1fr;
+        border-radius: 0;
+    }
+
+    .frame__statusbar {
+        display: none;
+    }
+
+    .header__img-area {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .buttons__btn {
+        height: 5rem;
+        width: 5rem;
+        font-size: 2rem;
+    }
+}

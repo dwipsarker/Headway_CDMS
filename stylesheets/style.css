@@ -53,11 +53,11 @@ body {
     font-size: 1.6rem;
     font-family: var(--body-text);
     background-color: #F8EEE6;
-    /* background-image: url("../img/blob-haikei.svg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #cfcfcf; */
+}
+
+
+.border {
+    border: 1px solid green;
 }
 
 /* 
@@ -70,11 +70,9 @@ STYLE FRAME AREA
     width: 260px;
     border-radius: 20px;
     background-color: var(--color-light);
-    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-        rgba(17, 17, 26, 0.05) 0px 8px 32px; */
-    /* outline: 7px solid #000000; */
-    /* outline-offset: 10px; */
-
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px 1fr;
 }
 
 /*statusbar style________________ */
@@ -104,6 +102,11 @@ STYLE FRAME AREA
     padding: 15px;
     flex-direction: column;
     position: relative;
+    overflow: scroll;
+}
+
+.frame__content::-webkit-scrollbar {
+    display: none;
 }
 
 .form-warning {
