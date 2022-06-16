@@ -10,28 +10,67 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
     <!-- additional style sheets  -->
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <link rel="stylesheet" href="./stylesheets/dbtchat.css" />
+    <link rel="stylesheet" href="./stylesheets/mediaQuery.css" />
 </head>
 
 <body>
 
     <div class="frame">
-
         <!-- statusbar area start -->
-        <div class="frame__statusbar">
+        <section class="frame__statusbar">
             <p class="statusbar__time">9:40</p>
             <i class="fa-solid fa-signal statusbar__icon"></i>
             <i class="fa-solid fa-wifi statusbar__icon"></i>
             <i class="fa-solid fa-battery-full statusbar__icon"></i>
-        </div>
+        </section>
         <!-- statusbar area end  -->
 
+        <!-- content area start  -->
+
+        <section class="frame__content">
+            <section class="content__header">
+                <i class="bi bi-arrow-left"></i>
+                <div class="header__img">
+                    <img src="./img/avatar/avatar.jpg" alt="">
+                </div>
+                <h2 class="header__admin">Avi Das</h2>
+            </section>
+            <section class="content__chat">
+                <div class="chat__message other-message">
+                    hello Avi, how are you??
+                </div>
+                <div class="chat__message">
+                    I am fine and you?
+                </div>
+                <div class="chat__message">
+                    Assignment er ki khobor?? Sir ki notun konu assignment dicoin?
+                </div>
+                <div class="chat__message other-message">
+                    Na koi, Sir tho r konu notun assignment diceoin na.
+                </div>
+            </section>
 
 
+        </section>
 
+
+        <!-- content area end  -->
+        <section class="frame__input">
+            <button class="input__btn">
+                <i class="bi bi-plus-square"></i>
+            </button>
+            <div class="input__area">
+                <input type="text" placeholder="Message..." class="area__fields">
+                <button class="area__send-btn">
+                    <i class="bi bi-send-fill"></i>
+                </button>
+            </div>
+        </section>
     </div>
 </body>
 
